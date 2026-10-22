@@ -1,12 +1,10 @@
 {
-  "mcpServers": {
-    "qmoosa-reality-gate": {
-      "command": "node",
-      "args": ["dist/index.js", "--mcp"],
-      "env": {
-        "QUICKNODE_RPC": "https://api.quicknode.com/demo",
-        "PQC_STANDARD": "NIST-FIPS-204"
-      }
-    }
-  }
+  "name": "yieldr",
+  "ticker": "YIEL",
+  "category": "RWA_TradFi",
+  "tools": [
+    { "name": "query_conway_state", "description": "Fetches current cellular automaton lattice" },
+    { "name": "execute_x402_settlement", "description": "Executes HTTP 402 micro-settlement" },
+    { "name": "fetch_quicknode_rpc", "description": "Queries QuickNode multi-chain endpoint" }
+  ]
 }
